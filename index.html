@@ -35,10 +35,11 @@
       }
     </style>
   </head>
-  <body class="inter-font px-3">
+  <body class="urbanist-font px-3 bg-[#F3F3F3]">
+    <!-- header -->
+    <header class="mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-16 pb-[50px]">      
     <!-- navbar -->
-    <header class="mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-8">
-      <nav class="flex justify-between items-center w-full">
+      <nav class="flex justify-between items-center w-full inter-font">
         <div class="logo flex items-center">
           <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
           <img src="./images/logo_icon.png" alt="" />
@@ -88,12 +89,13 @@
         </div>
       </nav>
       <!-- navbar end -->
+      
       <!-- Banner start -->
       <section
-        class="h-[550px] relative flex items-center justify-center xl:h-[650px] bg-red-300 bg-[url('./images/banner_bg.png')] bg-no-repeat bg-cover"
+        class="h-[550px] rounded-3xl relative flex items-center justify-center xl:h-[650px] bg-red-300 bg-[url('./images/banner_bg.png')] bg-no-repeat bg-cover w-full"
       >
-      <div class="absolute inset-0 bg-black opacity-75"></div>
-        <div class="text-center space-y-5">
+      <div class="absolute rounded-3xl inset-0 bg-gradient-to-t from-black opacity-75"></div>
+        <div class="text-center space-y-5 z-50">
           <div class="title-desc urbanist-font space-y-5">
             <h1 class="text-white font-bold text-5xl">
               Don't Miss Out on These Unbeatable <br> Black Friday Deals!
@@ -110,6 +112,48 @@
         </div>
       </section>
       <!-- Banner end -->
+      <section class="brand flex justify-between flex-wrap">
+        <div>
+          <img class="filter grayscale" src="./brand/1.png" alt=""></div>
+          <img class="filter grayscale" src="./brand/2.png" alt=""></div>
+          <img class="filter grayscale" src="./brand/3.png" alt=""></div>
+          <img class="filter grayscale" src="./brand/4.png" alt=""></div>
+          <img class="filter grayscale" src="./brand/5.png" alt=""></div>
+          <img class="filter grayscale" src="./brand/6.png" alt=""></div>
+      </section>
     </header>
+    <!-- header end -->
+    
+    <!-- main -->
+    <main class="mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-16 pb-[50px]">
+      <section class="products-section">
+        <div class="text-center flex flex-col justify-center items-center space-y-4">
+          <h1 class="text-5xl">Exclusive Products</h1>
+          <p class="text-[#0F0E0EB2] lg:w-[30%]">Save big this Black Friday with unbeatable deals on tech, home essentials, fashion, and more! Limited stock.</p>
+        </div>
+      </section>
+
+      <div class="products">
+        <div class="product-container h-[550px] w-[411px] rounded-lg bg-white">
+          <div class="product p-5">
+            <div class="h-[200px] bg-[#F3F3F3] rounded-lg">              
+            </div>
+            <div class="title-desc-btn">
+              <h1 class="text-xl">Exclusive Products</h1>
+              <p class="text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech, home essentials, fashion, and more! Limited stock.</p>
+              <div class="quantity-price flex justify-between items-center">
+                <h1>Price: 1520 Taka</h1>
+                <div class="bg-[#0F0E0E0D] px-8 py-2 rounded-lg text-lg space-x-5">
+                  <span>-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
   </body>
 </html>
