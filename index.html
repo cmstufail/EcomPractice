@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ecom</title>
+
+    <style>
+      /* font urbalist */
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      /* font inter */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      urbanist-font {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="inter-font px-3">
+    <!-- navbar -->
+    <header class="mx-auto mt-3 md:mt-[30px] lg:mt-[50px] space-y-8">
+      <nav class="flex justify-between items-center w-full">
+        <div class="logo flex items-center">
+          <h1 class="text-3xl"><span class="text-[#FC6320]">e</span>Com</h1>
+          <img src="./images/logo_icon.png" alt="" />
+        </div>
+
+        <div class="hamberger-icon md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="size-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <div class="hidden md:block menuItems">
+          <ul class="flex gap-6 text-[#0F0E0E99] items-center">
+            <li
+              class="bg-[#FC63201A] p-2 border rounded-lg border-[#FC632026] text-[#FC6320]"
+            >
+              Home
+            </li>
+            <li>Shop</li>
+            <li>App Projects</li>
+            <li>App Products</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="hidden md:block social-media">
+          <ul class="flex gap-4">
+            <li>
+              <a href="#"><img src="./images/fb.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/insta.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twit.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <!-- Banner start -->
+      <section
+        class="h-[550px] relative flex items-center justify-center xl:h-[650px] bg-red-300 bg-[url('./images/banner_bg.png')] bg-no-repeat bg-cover"
+      >
+      <div class="absolute inset-0 bg-black opacity-75"></div>
+        <div class="text-center space-y-5">
+          <div class="title-desc urbanist-font space-y-5">
+            <h1 class="text-white font-bold text-5xl">
+              Don't Miss Out on These Unbeatable <br> Black Friday Deals!
+            </h1>
+            <p class="font-noraml text-slate-50">
+              Save big this Black Friday with unbeatable deals on tech, home
+              essentials, <br> fashion, and more! Limited stock.
+            </p>
+          </div>
+          <div class="explore-btns text-white">
+            <button class="bg-[#FC6320] py-3 px-5 rounded-md">Explore Deal</button>
+            <button class="rounded-md py-3 px-8 border border-white">Buy Now</button>
+          </div>
+        </div>
+      </section>
+      <!-- Banner end -->
+    </header>
+  </body>
+</html>
